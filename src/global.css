@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom theme styles */
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
