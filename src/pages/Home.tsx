@@ -9,7 +9,7 @@ function Home() {
           React - Vite - TS - TailwindCSS - Prettier
         </div>
 
-        <div className="flex items-center justify-center text-center rounded-lg text-3xl font-bold p-4 bg-green-300 w-full sm:w-2/3 lg:w-1/2">
+        <div className="flex items-center justify-center text-center rounded-lg text-4xl font-bold p-4 bg-green-300 w-full sm:w-2/3 lg:w-1/2">
           Boilerplate by Evan Jaquez
         </div>
 
@@ -22,6 +22,8 @@ function Home() {
                 alt="pfp"
               />
             </GlareCard>
+
+            <p className="text-center py-4">Hover Over Me</p>
           </div>
         </div>
       </div>
