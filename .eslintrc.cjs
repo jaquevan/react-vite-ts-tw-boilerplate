@@ -5,19 +5,24 @@ module.exports = {
         es2021: true,
     },
     extends: [
+        'eslint:recommended',
         'plugin:react/recommended',
-        // make sure prettier is always the last one
-        'plugin:prettier/recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended', // Keep Prettier integration
     ],
-    overrides: [],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        project: ['./tsconfig.json', './tsconfig.node.json'],
     },
-    plugins: ['react', 'prettier'],
+    plugins: ['react', '@typescript-eslint', 'prettier'],
     rules: {
-        'react/react-in-jsx-scope': 0,
+        'react/react-in-jsx-scope': 'off', // For React 17+
+        'prettier/prettier': 'warn',       // Show Prettier issues as warnings
+    },
+    settings: {
+        react: {
+            version: 'detect',
+        },
     },
 };
