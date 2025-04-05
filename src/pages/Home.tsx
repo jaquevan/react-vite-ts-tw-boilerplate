@@ -5,17 +5,16 @@ function Home() {
   return (
     <>
       <div className="flex flex-col gap-4 justify-center items-center h-screen p-4 sm:p-8">
-        <div className="flex items-center justify-center text-center rounded-lg text-3xl font-bold p-4 bg-green-400 w-full sm:w-2/3 lg:w-1/2">
-          React - Vite - TS - TailwindCSS - Prettier
+        <div className="flex items-center justify-center text-center rounded-lg text-3xl font-bold p-4 bg-green-400 w-full sm:w-2/3 lg:w-1/2 border-amber-950 border-4">
+          React - Vite - TS - TailwindCSS + ShadCn - Prettier
         </div>
-
-        <div className="flex items-center justify-center text-center rounded-lg text-4xl font-bold p-4 bg-green-300 w-full sm:w-2/3 lg:w-1/2">
+        <div className="flex items-center justify-center text-center rounded-lg text-4xl font-bold p-4 bg-green-300 w-full sm:w-2/3 lg:w-1/2 border-amber-950 border-4">
           Boilerplate by Evan Jaquez
         </div>
 
         <div>
           <div className="items-center">
-            <GlareCard className="flex flex-col items-center justify-center">
+            <GlareCard className="flex flex-col items-center justify-center border-amber-950 border-8">
               <img
                 className="h-full w-full absolute inset-0 object-cover"
                 src={Monkey}
@@ -23,7 +22,9 @@ function Home() {
               />
             </GlareCard>
 
-            <p className="text-center py-4">Hover Over Me</p>
+            <p className="text-center py-4 text-white text-2xl">
+              Hover Over Me
+            </p>
           </div>
         </div>
       </div>
